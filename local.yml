@@ -1,10 +1,10 @@
 - hosts: localhost
   become: true
   vars:
-    - apt_file: /etc/apt/sources.list.d/google-chrome.list
+    - apt_file_chrome: /etc/apt/sources.list.d/google-chrome.list
   pre_tasks:
     - name: Does the Google apt file exist?
-      command: test -f {{apt_file}}
+      command: test -f {{apt_file_chrome}}
       register: google_apt_exists
       ignore_errors: True
     - name: Add Google Chrome key
