@@ -5,6 +5,7 @@
   copy: src=files/wallpaper.jpg dest=/home/gillian/.wallpaper.jpg owner=gillian group=gillian mode=600
 
 - name: Set GNOME wallpaper
+  become_user: gillian
   dconf: key="/org/gnome/desktop/background/picture-uri/" value="'file:///home/gillian/.wallpaper.jpg'"
 
 - name: Copy lockscreenfile
