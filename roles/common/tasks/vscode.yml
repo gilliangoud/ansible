@@ -3,3 +3,5 @@
 
 - name: Install VScode plugins
   script: files/install_plugin.sh
+  become: true
+  become_user: gillian
