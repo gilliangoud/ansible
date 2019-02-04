@@ -11,4 +11,4 @@
 - name: Create dotfiles symlinks
   script: /home/gillian/code/dotfiles/bin/install.sh
   become: true
-  become_user: "{{ ansible_env.SUDO_USER }}"
+  become_user: "{{ ansible_env.USER }}"
