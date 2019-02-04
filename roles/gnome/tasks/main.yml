@@ -6,10 +6,10 @@
   apt: name=python-psutil
 
 - name: Copy wallpaper file
-  copy: src=files/wallpaper.jpg dest=~/wallpaper.jpg mode=755
+  copy: src=files/wallpaper.jpg dest=~/Pictures/wallpaper.jpg mode=755
 
 - name: Copy lockscreenfile
-  copy: src=files/lockscreen.jpg dest=~/lockscreen.jpg mode=755
+  copy: src=files/lockscreen.jpg dest=~/Pictures/lockscreen.jpg mode=755
 
 - name: Change dconf settings
   dconf: key={{ item.value.key }}
