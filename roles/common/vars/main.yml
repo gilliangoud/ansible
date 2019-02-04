@@ -10,7 +10,6 @@ apt_packages:
   - tmux
   - gnome-tweaks
   - steam
-  - code
   - vlc
   - gnome-shell-extension-appindicator
   - google-chrome-stable
@@ -19,8 +18,3 @@ apt_packages:
   - ffmpeg
   - nmap
   - rdesktop
-
-dotfiles: {
-  "repo": "https://github.com/gilliangoud/dotfiles.git",
-  "host": "www.github.com",
-}

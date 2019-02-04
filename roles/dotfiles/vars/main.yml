@@ -1,0 +1,6 @@
+---
+
+dotfiles: {
+  "repo": "https://github.com/gilliangoud/dotfiles.git",
+  "host": "www.github.com",
+}

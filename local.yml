@@ -14,3 +14,7 @@
       tags: ["gnome"]
       become: yes
       become_user: "{{ ansible_env.SUDO_USER }}"
+    - role: dotfiles
+      tags: ["dotfiles"]
+      become: yes
+      become_user: "{{ ansible_env.SUDO_USER }}"
