@@ -1,4 +1,6 @@
 ---
+chrome_apt_file: /etc/apt/sources.list.d/google-chrome.list
+
 pip_packages:
   - beets
   - virtualenv
