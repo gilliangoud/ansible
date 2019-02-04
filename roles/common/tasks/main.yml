@@ -20,13 +20,7 @@
 - name: Install apt packages
   apt: name={{item}} state=present
   with_items:
-    - htop
-    - mc
-    - tmux
-    - gnome-tweaks
-    - steam
-    - code
-    - vlc
+    - "{{ apt-packages }}"
 
 - name: Install pip packages
   pip: name={{ item }} state=latest
