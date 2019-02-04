@@ -1,21 +1,21 @@
 ---
 # roles/common/tasks/main.yml
 
-- name: Clone my dotfiles
-  git: repo={{ dotfiles.repo }} dest=/home/{{ ansible_env.USERNAME }}/.dotfiles
-    recursive=yes accept_hostkey=yes update=yes track_submodules=yes
-  ignore_errors: yes
-  become: false
+# - name: Clone my dotfiles
+#   git: repo={{ dotfiles.repo }} dest=/home/{{ ansible_env.USERNAME }}/.dotfiles
+#     recursive=yes accept_hostkey=yes update=yes track_submodules=yes
+#   ignore_errors: yes
+#   become: false
 
-- name: Set dotfiles ownership
-  file: path=/home/{{ ansible_env.USERNAME }}/.dotfiles recurse=yes
-    owner={{ ansible_env.USERNAME }} group={{ ansible_env.USERNAME }}
+# - name: Set dotfiles ownership
+#   file: path=/home/{{ ansible_env.USERNAME }}/.dotfiles recurse=yes
+#     owner={{ ansible_env.USERNAME }} group={{ ansible_env.USERNAME }}
 
-- name: Create dotfiles symlinks
-  shell: /home/{{ ansible_env.USERNAME }}/.dotfiles/init/dotfiles-install.sh
-  args:
-    creates: "{{ ansible_user_dir }}/.vimrc"
-  become: false
+# - name: Create dotfiles symlinks
+#   shell: /home/{{ ansible_env.USERNAME }}/.dotfiles/init/dotfiles-install.sh
+#   args:
+#     creates: "{{ ansible_user_dir }}/.vimrc"
+#   become: false
 
 - name: Install pip (if needed)
   easy_install: name=pip
@@ -24,6 +24,11 @@
   pip: name={{ item }} state=latest
   with_items:
     - "{{ pip_packages }}"
+
+- name: Install apt packages
+  apt: name={{item}} state=present
+  with_items:
+    - "{{apt-packages}}"
 
 - name: NOPASSWD sudo
   lineinfile: "dest=/etc/sudoers.d/{{ ansible_env.SUDO_USER }}

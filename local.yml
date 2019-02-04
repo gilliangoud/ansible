@@ -7,9 +7,8 @@
   tasks:
     - include: tasks/users.yml
     - include: tasks/cron.yml
-    - include: tasks/packages.yml
   roles:
-    # - common
+    - common
     - role: gnome
       tags: ["gnome"]
       become: yes
