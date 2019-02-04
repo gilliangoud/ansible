@@ -6,7 +6,6 @@ pip_packages:
   - cheat
 
 apt_packages:
-  - pip
   - pip3
   - htop
   - mc
