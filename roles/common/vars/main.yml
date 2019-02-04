@@ -6,6 +6,8 @@ pip_packages:
   - cheat
 
 apt-packages:
+  - pip
+  - pip3
   - htop
   - mc
   - tmux

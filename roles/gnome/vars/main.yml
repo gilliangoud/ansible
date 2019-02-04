@@ -23,12 +23,6 @@ gsettings:
   clock-date:
     key: /org/gnome/desktop/interface/clock-show-date
     value: "'true'"
-  ambient-light:
-    key: /org/gnome/settings-daemon/plugins/power/ambient-enabled
-    value: "'false'"
-  show-battery-percentage:
-    key: /org/gnome/desktop/interface/show-battery-percentage
-    value: "'true'"
   tap-to-click:
     key: /org/gnome/desktop/peripherals/touchpad/tap-to-click
     value: "'true'"
