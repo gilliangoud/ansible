@@ -1,0 +1,11 @@
+---
+pip_packages:
+  - beets
+  - virtualenv
+  - ps_mem
+  - cheat
+
+dotfiles: {
+  "repo": "https://github.com/gilliangoud/dotfiles.git",
+  "host": "www.github.com",
+}
