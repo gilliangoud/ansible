@@ -1,5 +1,5 @@
 - name: Clone my dotfiles
-  git: repo={{ dotfiles.repo }} dest=/home/gillian/Code/
+  git: repo={{ dotfiles.repo }} dest=/home/gillian/Code/dotfiles/
     recursive=yes accept_hostkey=yes update=yes track_submodules=yes
   ignore_errors: yes
   become: false
