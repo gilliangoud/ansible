@@ -31,7 +31,7 @@ gsettings:
     value: '["-org.gnome.Nautilus.desktop", "google-chrome.desktop", "code.desktop", "jetbrains-idea.desktop", "gitkraken.desktop"]'
   xkb-options:
     key: /org/gnome/desktop/input-sources/xkb-options
-    value: '["caps:swapescape","terminate:ctrl_alt_bksp"]'
+    value: ''
   disable-ambient-light:
     key: /org/gnome/settings-daemon/plugins/power/ambient-enabled
     value: true
