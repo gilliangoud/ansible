@@ -13,7 +13,7 @@ gsettings:
     value: true
   mouse-modifier:
     key: /org/gnome/desktop/wm/preferences/mouse-button-modifier
-    value: '<alt>'
+    value: 'Super_L'
   show-menubar:
     key: /org/gnome/Terminal/Legacy/Settings/default-show-menubar
     value: false
