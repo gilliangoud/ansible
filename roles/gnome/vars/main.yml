@@ -14,9 +14,6 @@ gsettings:
   mouse-modifier:
     key: /org/gnome/desktop/wm/preferences/mouse-button-modifier
     value: '<alt>'
-  show-menubar:
-    key: /org/gnome/Terminal/Legacy/Settings/default-show-menubar
-    value: false
   enable-location:
     key: /org/gnome/system/location/enabled
     value: true
@@ -41,15 +38,9 @@ gsettings:
   terminal-disable-menubar:
     key: /org/gnome/Terminal/Legacy/Settings/default-show-menubar
     value: false
-  terminal-default-theme:
-    key: /org/gnome/Terminal/Legacy/Settings/theme-variant
-    value: 'dark'
   terminal-mnemonics:
     key: /org/gnome/Terminal/Legacy/Settings/mnemonics-enabled
     value: true
-  disable-animantions:
-    key: /org/gnome/desktop/interface/enable-animations
-    value: false
   show-battery-percentage:
     key: /org/gnome/desktop/interface/show-battery-percentage
     value: true
