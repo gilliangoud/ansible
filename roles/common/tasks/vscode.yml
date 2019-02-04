@@ -1,5 +1,5 @@
 - name: Install VScode
-  apt: pkg=code state=installed
+  apt: pkg=code state=present
 
 - name: Install VScode plugins
   script: files/install_plugin.sh
