@@ -5,7 +5,7 @@ pip_packages:
   - ps_mem
   - cheat
 
-apt-packages:
+apt_packages:
   - pip
   - pip3
   - htop

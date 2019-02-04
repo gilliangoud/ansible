@@ -20,7 +20,7 @@
 - name: Install apt packages
   apt: name={{item}} state=present
   with_items:
-    - "{{ apt-packages }}"
+    - "{{ apt_packages }}"
 
 - name: Install pip packages
   pip: name={{ item }} state=latest
