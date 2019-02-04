@@ -1,0 +1,18 @@
+---
+# roles/common/tasks/main.yml
+# requires gsettings module
+
+- name: Install python-psutil package
+  apt: name=python-psutil
+
+- name: Copy wallpaper file
+  copy: src=files/wallpaper.jpg dest=~/wallpaper.jpg mode=755
+
+- name: Copy lockscreenfile
+  copy: src=files/lockscreen.jpg dest=~/lockscreen.jpg mode=755
+
+- name: Change dconf settings
+  dconf: key={{ item.value.key }}
+    value={{ item.value.value }}
+  with_dict: "{{ gsettings }}"
+  ignore_errors: true

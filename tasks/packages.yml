@@ -10,4 +10,9 @@
     - vlc
     - gnome-shell-extension-appindicator
     - google-chrome-stable
+    - exfat-fuse
+    - exfat-utils
+    - ffmpeg
+    - nmap
+    - rdesktop
     
