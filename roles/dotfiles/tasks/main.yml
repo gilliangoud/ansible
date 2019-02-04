@@ -1,13 +1,13 @@
 - name: Clone my dotfiles
-  git: repo={{ dotfiles.repo }} dest=/home/gillian/code/dotfiles
+  git: repo={{ dotfiles.repo }} dest=/home/gillian/Code/
     recursive=yes accept_hostkey=yes update=yes track_submodules=yes
   ignore_errors: yes
   become: false
 
 - name: Set dotfiles ownership
-  file: path=/home/gillian/code/dotfiles/ recurse=yes owner=gillian group=gillian
+  file: path=/home/gillian/Code/dotfiles recurse=yes owner=gillian group=gillian
 
 - name: Create dotfiles symlinks
-  script: /home/gillian/code/dotfiles/bin/install.sh
+  script: /home/gillian/Code/dotfiles/bin/install.sh
   become: true
   become_user: gillian
