@@ -6,6 +6,7 @@
 
 - name: Set dotfiles ownership
   file: path=/home/gillian/code/dotfiles/ recurse=yes owner=gillian group=gillian
+  become: true
 
 - name: Create dotfiles symlinks
   script: /home/gillian/code/dotfiles/bin/install.sh
