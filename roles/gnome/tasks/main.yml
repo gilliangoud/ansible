@@ -2,8 +2,8 @@
 # roles/common/tasks/main.yml
 # requires gsettings module
 
-- name: Install python-psutil package
-  apt: name=python-psutil
+# - name: Install python-psutil package
+#   apt: name=python-psutil
 
 - name: Copy wallpaper file
   copy: src=files/wallpaper.jpg dest=/home/gillian/Pictures/wallpaper.jpg owner=gillian group=gillian mode=600

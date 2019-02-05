@@ -10,6 +10,7 @@ pip_packages:
 apt_packages:
   - python3-pip
   - python-pip
+  - python-psutil # needed for gnome
   - mc
   - tmux
   - gnome-tweaks
