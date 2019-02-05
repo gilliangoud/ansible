@@ -8,7 +8,7 @@
   file: path=/home/gillian/Code/dotfiles recurse=yes owner=gillian group=gillian
 
 - name: Create dotfiles symlinks
-  command: cd ~/Code/dotfiles/bin && install.sh
+  command: 'cd ~/Code/dotfiles/bin && install.sh'
   args:
     chdir: /home/gillian/Code/dotfiles/bin/
   become: true
