@@ -15,3 +15,4 @@
       become: yes
       become_user: "{{ ansible_env.SUDO_USER }}"
     - dotfiles
+    - viriciti
