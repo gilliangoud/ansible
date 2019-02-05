@@ -23,3 +23,7 @@ apt_packages:
   - ffmpeg
   - nmap
   - rdesktop
+  - curl
+
+unwanted_packages:
+  - firefox

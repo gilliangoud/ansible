@@ -6,6 +6,11 @@
   with_items:
     - "{{ apt_packages }}"
 
+- name: Uninstall unwanted packages
+  apt: name={{item}} state=absent
+  with_items:
+    - "{{ unwanted_packages }}"
+
 - name: Install pip packages
   pip: name={{ item }} state=latest
   with_items:
