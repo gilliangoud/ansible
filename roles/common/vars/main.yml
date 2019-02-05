@@ -8,6 +8,8 @@ pip_packages:
   - cheat
 
 apt_packages:
+  - python3-pip
+  - python-pip
   - mc
   - tmux
   - gnome-tweaks
